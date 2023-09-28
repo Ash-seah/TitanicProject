@@ -8,16 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'project';
 
-  dataUser: any = {
-
-  }
+  dataUser: any = [] = [];
 
   user: any = {
 
     nameValue: '',
     sexValue: '',
     ageValue : null ,
-    parentsValue: '',
+    parentsValue : '',
     siblingsValue: null,
     spouseValue: '',
     childrenVale: null
@@ -28,13 +26,15 @@ export class AppComponent {
     this.dataUser.push(this.user);
     console.log(this.dataUser);
     this.user = {
+
       nameValue: '',
       sexValue: '',
-      ageValue: 0,
+      ageValue : null ,
       parentsValue: '',
-      siblingsValue: 0,
+      siblingsValue: null,
       spouseValue: '',
-      childrenVale: 0
+      childrenVale: null
+      
     }
   }
 

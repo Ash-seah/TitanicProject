@@ -6,10 +6,10 @@
     </div>
 
     <div class="input-sex">
-      <input class="form-check-input me-1" type="radio">
-      <label class="form-check-label me-3 align-top" for="inlineRadio1" [(ngModel)]="user.sexValue">Male</label>
-      <input class="form-check-input me-1" type="radio">
-      <label class="form-check-label align-top" for="inlineRadio2" [(ngModel)]="user.sexValue">Female</label>
+      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.sexValue"  value="Male" >
+      <label class="form-check-label me-3 align-top">Male</label>
+      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.sexValue"  value="Female">
+      <label class="form-check-label align-top">Female</label>
     </div>
 
     <div class="input-age me-5 mt-4">
@@ -17,11 +17,11 @@
     </div>
 
     <div class="input-parents ms-3">
-      <select class="form-select">
-        <option  [(ngModel)]="user.parentsValue" selected>Parents</option>
-        <option value="1" [(ngModel)]="user.parentsValue">N Mother</option>
-        <option value="2" [(ngModel)]="user.parentsValue">N Father</option>
-        <option value="3" [(ngModel)]="user.parentsValue">Both</option>
+      <select class="form-select" [(ngModel)]="user.parentsValue">
+        <option value="Father" selected>Father</option>
+        <option value="Mother">Mother</option>
+        <option value="Neither">Neither</option>
+        <option value="Both">Both</option>
       </select>
     </div>
 
@@ -30,9 +30,9 @@
     </div>
 
     <div class="input-spouse ms-5">
-      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.spouseValue">
+      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.spouseValue" value="Married">
       <label class="form-check-label me-3">Married</label>
-      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.spouseValue">
+      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.spouseValue" value="Single">
       <label class="form-check-label">Single</label>
     </div>
 
