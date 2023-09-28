@@ -2,45 +2,45 @@
   <div class="input-body d-flex flex-wrap align-items-end">
 
     <div class="input-name">
-      <input type="text" class="input me-5" placeholder="Your Name..">
+      <input type="text" class="input me-5" placeholder="Your Name.." [(ngModel)]="user.nameValue">
     </div>
 
     <div class="input-sex">
       <input class="form-check-input me-1" type="radio">
-      <label class="form-check-label me-3 align-top" for="inlineRadio1">Male</label>
+      <label class="form-check-label me-3 align-top" for="inlineRadio1" [(ngModel)]="user.sexValue">Male</label>
       <input class="form-check-input me-1" type="radio">
-      <label class="form-check-label align-top" for="inlineRadio2">Female</label>
+      <label class="form-check-label align-top" for="inlineRadio2" [(ngModel)]="user.sexValue">Female</label>
     </div>
 
     <div class="input-age me-5 mt-4">
-      <input type="number" class="input input-group" placeholder="Your Age..">
+      <input type="number" class="input input-group" placeholder="Your Age.." [(ngModel)]="user.ageValue">
     </div>
 
     <div class="input-parents ms-3">
       <select class="form-select">
-        <option selected>Parents</option>
-        <option value="1">Mother</option>
-        <option value="2">Father</option>
-        <option value="3">0</option>
+        <option  [(ngModel)]="user.parentsValue" selected>Parents</option>
+        <option value="1" [(ngModel)]="user.parentsValue">N Mother</option>
+        <option value="2" [(ngModel)]="user.parentsValue">N Father</option>
+        <option value="3" [(ngModel)]="user.parentsValue">Both</option>
       </select>
     </div>
 
     <div class="input-siblings mt-4">
-      <input type="number" class="input input-group" placeholder="Siblings..">
+      <input type="number" class="input input-group" placeholder="Siblings.." [(ngModel)]="user.siblingsValue">
     </div>
 
     <div class="input-spouse ms-5">
-      <input class="form-check-input me-1" type="radio">
-      <label class="form-check-label me-3" for="flexRadioDefault1">Married</label>
-      <input class="form-check-input me-1" type="radio" checked>
-      <label class="form-check-label" for="flexRadioDefault2">Single</label>
+      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.spouseValue">
+      <label class="form-check-label me-3">Married</label>
+      <input class="form-check-input me-1" type="radio" [(ngModel)]="user.spouseValue">
+      <label class="form-check-label">Single</label>
     </div>
 
     <div class="input-children mt-4">
-      <input type="number" class="input input-group" placeholder="Children..">
+      <input type="number" class="input input-group" placeholder="Children.." [(ngModel)]="user.childrenVale">
     </div>
 
-
+    <button type="button" (click)="userGet()" class="btn btn-danger ms-5">Check Now!</button>
   </div>
 
 </div>

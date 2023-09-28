@@ -7,4 +7,35 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+
+  dataUser: any = {
+
+  }
+
+  user: any = {
+
+    nameValue: '',
+    sexValue: '',
+    ageValue : null ,
+    parentsValue: '',
+    siblingsValue: null,
+    spouseValue: '',
+    childrenVale: null
+
+  }
+
+  userGet() {
+    this.dataUser.push(this.user);
+    console.log(this.dataUser);
+    this.user = {
+      nameValue: '',
+      sexValue: '',
+      ageValue: 0,
+      parentsValue: '',
+      siblingsValue: 0,
+      spouseValue: '',
+      childrenVale: 0
+    }
+  }
+
 }
