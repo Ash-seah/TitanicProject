@@ -18,7 +18,7 @@ export class AppComponent {
     parentsValue : '',
     siblingsValue: null,
     spouseValue: '',
-    childrenVale: null
+    childrenValue: null
 
   }
 
@@ -33,7 +33,7 @@ export class AppComponent {
       parentsValue: '',
       siblingsValue: null,
       spouseValue: '',
-      childrenVale: null
+      childrenValue: null
       
     }
   }
